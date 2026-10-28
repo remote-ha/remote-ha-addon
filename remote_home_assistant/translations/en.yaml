@@ -1,4 +1,4 @@
 configuration:
   pairing_token:
-    name: Pairing token
-    description: One-time token from remote-ha.com. After pairing, the app remembers its connection.
+    name: Token
+    description: Paste a new token from https://remote-ha.com, save and start or restart the app. Your connection is remembered automatically.

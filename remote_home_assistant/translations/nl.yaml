@@ -1,0 +1,4 @@
+configuration:
+  pairing_token:
+    name: Token
+    description: Plak een nieuw token van https://remote-ha.com, sla het op en start of herstart de app. Je verbinding wordt automatisch opgeslagen.

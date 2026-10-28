@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM golang:1.27.3-bookworm AS build
 ARG TARGETARCH
 ARG BUILD_ARCH
 WORKDIR /src
-COPY src/go.mod src/go.sum ./
+COPY src/go.mod ./
 RUN go mod download
 COPY src/cmd ./cmd
 RUN case "${TARGETARCH:-$BUILD_ARCH}" in aarch64|arm64) arch=arm64;; amd64) arch=amd64;; *) exit 1;; esac; CGO_ENABLED=0 GOOS=linux GOARCH=$arch go build -trimpath -ldflags="-s -w" -o /agent ./cmd/agent
@@ -14,5 +14,5 @@ RUN case "${TARGETARCH:-$BUILD_ARCH}" in aarch64|arm64) export TARGETARCH=arm64;
 COPY --from=build /agent /usr/local/bin/agent
 # Supervisor provides /data. The default role reads Core info and the app can
 # migrate its own options; no Core admin token, host network or Docker socket.
-LABEL org.opencontainers.image.version="1.0.1"
+LABEL org.opencontainers.image.version="1.0.0"
 ENTRYPOINT ["agent"]

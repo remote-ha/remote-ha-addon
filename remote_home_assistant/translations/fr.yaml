@@ -1,0 +1,4 @@
+configuration:
+  pairing_token:
+    name: Jeton
+    description: Collez un nouveau jeton depuis https://remote-ha.com, enregistrez-le, puis démarrez ou redémarrez l’application. Votre connexion est mémorisée automatiquement.

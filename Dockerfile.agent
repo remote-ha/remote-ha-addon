@@ -1,13 +1,13 @@
 FROM --platform=$BUILDPLATFORM golang:1.27.3-bookworm AS build
 ARG TARGETARCH
 WORKDIR /src
-COPY remote_home_assistant/src/go.mod remote_home_assistant/src/go.sum ./
+COPY remote_home_assistant/src/go.mod ./
 RUN go mod download
 COPY remote_home_assistant/src/cmd ./cmd
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=$TARGETARCH go build -trimpath -ldflags="-s -w" -o /agent ./cmd/agent
 FROM python:3.12.14-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e
 ARG TARGETARCH
-COPY scripts/download_frp.py /tmp/download_frp.py
+COPY download_frp.py /tmp/download_frp.py
 RUN python /tmp/download_frp.py && rm /tmp/download_frp.py && useradd --uid 10001 --no-create-home app && mkdir -p /data/rha && chown -R 10001:10001 /data
 COPY --from=build /agent /usr/local/bin/agent
 USER 10001:10001

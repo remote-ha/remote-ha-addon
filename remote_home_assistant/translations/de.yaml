@@ -1,0 +1,4 @@
+configuration:
+  pairing_token:
+    name: Token
+    description: Füge einen neuen Token von https://remote-ha.com ein, speichere ihn und starte die App oder starte sie neu. Die Verbindung wird automatisch gespeichert.

@@ -1,4 +1,4 @@
 configuration:
   pairing_token:
-    name: Token parowania
-    description: Jednorazowy token z panelu remote-ha.com. Po sparowaniu aplikacja zapamiętuje połączenie.
+    name: Token
+    description: Wklej nowy token z https://remote-ha.com, zapisz i uruchom lub zrestartuj aplikację. Połączenie zostanie zapamiętane automatycznie.

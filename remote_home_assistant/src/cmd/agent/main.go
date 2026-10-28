@@ -276,17 +276,29 @@ func (a *Agent) saveIdentity(identity Identity, key *ecdsa.PrivateKey) error {
 
 func (a *Agent) pair() error {
 	directory := filepath.Join(a.state, "identity")
+	cached := false
 	if data, err := os.ReadFile(filepath.Join(directory, "identity.json")); err == nil {
 		if err = json.Unmarshal(data, &a.identity); err != nil {
 			return err
 		}
 		a.key, err = loadKey(filepath.Join(directory, "device.key"))
-		if err == nil {
-			if pending, e := loadKey(filepath.Join(a.state, "renewal.key")); e == nil && pending.PublicKey.Equal(&a.key.PublicKey) {
-				_ = os.Remove(filepath.Join(a.state, "renewal.key"))
-			}
+		if err != nil {
+			return err
 		}
-		return err
+		cached = true
+		if pending, e := loadKey(filepath.Join(a.state, "renewal.key")); e == nil && pending.PublicKey.Equal(&a.key.PublicKey) {
+			_ = os.Remove(filepath.Join(a.state, "renewal.key"))
+		}
+	}
+	fingerprint := sha256.Sum256([]byte(a.options.PairingToken))
+	fingerprintText := hex.EncodeToString(fingerprint[:])
+	marker := filepath.Join(a.state, "pairing-token.sha256")
+	previous, _ := os.ReadFile(marker)
+	if cached && (a.options.PairingToken == "" || string(previous) == fingerprintText) {
+		return nil
+	}
+	if a.options.PairingToken == "" {
+		return errors.New("pairing token required")
 	}
 	key, err := loadKey(filepath.Join(a.state, "pairing.key"))
 	if os.IsNotExist(err) {
@@ -298,15 +310,17 @@ func (a *Agent) pair() error {
 	if err != nil {
 		return err
 	}
-	if a.options.PairingToken == "" {
-		return errors.New("pairing token required")
-	}
 	csr, err := newCSR(key)
 	if err != nil {
 		return err
 	}
 	data, err := a.request("/v1/pair", map[string]string{"token": a.options.PairingToken, "csr": csr}, false)
 	if err != nil {
+		var status *managementStatusError
+		if cached && errors.As(err, &status) && (status.code == 401 || status.code == 409) {
+			log.Print("pairing token rejected or already used; retaining the saved identity")
+			return nil
+		}
 		return err
 	}
 	var identity Identity
@@ -316,10 +330,14 @@ func (a *Agent) pair() error {
 	if err = a.saveIdentity(identity, key); err != nil {
 		return err
 	}
-	a.options.PairingToken = "" // Supervisor options must be cleared by the operator after pairing.
-	return os.Remove(filepath.Join(a.state, "pairing.key"))
+	if err = atomicWrite(marker, []byte(fingerprintText), 0600); err != nil {
+		log.Print("pairing succeeded; token fingerprint could not be persisted")
+	}
+	a.options.PairingToken = ""
+	_ = os.Remove(filepath.Join(a.state, "pairing.key"))
+	log.Print("pairing completed; new device identity saved")
+	return nil
 }
-
 func (a *Agent) refreshToken() error {
 	data, err := a.request("/v1/device/token", map[string]string{}, true)
 	if err != nil {
@@ -487,9 +505,9 @@ func (a *Agent) run(ctx context.Context) {
 	if ctx.Err() != nil {
 		return
 	}
-	log.Print("device paired; saved identity will be reused on restart")
+	log.Print("device identity loaded; requesting authorization")
 	a.configChanged = make(chan struct{}, 1)
-	log.Print("private-CA mTLS tunnel enabled; Home Assistant HTTPS changes and user certificates are not required")
+	log.Print("encrypted connection enabled; no additional Home Assistant setup is required")
 	var child *exec.Cmd
 	var done chan error
 	stop := func() {
