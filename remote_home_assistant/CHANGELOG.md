@@ -1,3 +1,11 @@
+# 1.0.1
+
+- English: Fixed installation from the Home Assistant app store. The website link remains available in the app information and documentation.
+- Polski: Naprawiono instalację ze sklepu Home Assistant. Link do strony pozostaje w informacjach o aplikacji i dokumentacji.
+- Deutsch: Installation aus dem Home-Assistant-App-Store korrigiert. Der Website-Link bleibt in den App-Informationen und der Dokumentation verfügbar.
+- Nederlands: Installatie vanuit de Home Assistant-appwinkel hersteld. De websitelink blijft beschikbaar in de app-informatie en documentatie.
+- Français : Installation depuis la boutique d’applications Home Assistant corrigée. Le lien du site reste disponible dans les informations de l’application et la documentation.
+
 # 1.0.0
 
 ## English

@@ -14,5 +14,5 @@ RUN case "${TARGETARCH:-$BUILD_ARCH}" in aarch64|arm64) export TARGETARCH=arm64;
 COPY --from=build /agent /usr/local/bin/agent
 # Supervisor provides /data. The default role reads Core info and the app can
 # migrate its own options; no Core admin token, host network or Docker socket.
-LABEL org.opencontainers.image.version="1.0.0"
+LABEL org.opencontainers.image.version="1.0.1"
 ENTRYPOINT ["agent"]

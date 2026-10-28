@@ -1,4 +1,4 @@
-# Remote Home Assistant 1.0.0
+# Remote Home Assistant 1.0.1
 
 English · Polski · Deutsch · Nederlands · Français
 
