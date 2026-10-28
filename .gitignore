@@ -1,0 +1,8 @@
+.cache/
+*.tar
+*.zip
+*.sha256
+.env
+*.pem
+*.key
+__pycache__/
