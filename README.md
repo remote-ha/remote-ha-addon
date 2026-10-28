@@ -7,7 +7,7 @@ repository. Building this app never requires that repository or its credentials.
 
 ## Install
 
-Add this repository's HTTPS URL in **Settings → Apps → App store → Repositories**,
+Add `https://github.com/remote-ha/remote-ha-addon` in **Settings → Apps → App store → Repositories**,
 then install **Remote Home Assistant**. Create an installation at
 [remote-ha.com](https://remote-ha.com), choose its address and generate a pairing
 token. Paste the token into the app's only configuration field and start it.
