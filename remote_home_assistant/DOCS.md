@@ -23,7 +23,7 @@ Requires **Home Assistant OS**, an administrator account and an **aarch64 (ARM64
 
 The app store downloads the app from the [public GitHub repository](https://github.com/remote-ha/remote-ha-addon); no ZIP download or manual file copying is needed.
 
-**HACS:** HACS does not install Home Assistant apps (formerly add-ons). This repository is an app, not a HACS integration. Use the app-store methods above. See the [HACS FAQ](https://www.hacs.xyz/docs/faq/addons/) and the [full installation guide](https://remote-ha.com/docs).
+**HACS:** HACS does not install Home Assistant apps (formerly add-ons). This repository is an app, not a HACS integration. Use the app-store methods above. See the [HACS FAQ](https://www.hacs.xyz/docs/faq/addons/) and the [full installation guide](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
 
 ### Pair your home
 
@@ -60,7 +60,7 @@ Wymagane są **Home Assistant OS**, konto administratora i urządzenie **aarch64
 
 Sklep pobiera aplikację z [publicznego repozytorium GitHub](https://github.com/remote-ha/remote-ha-addon). Nie trzeba pobierać pliku ZIP ani ręcznie kopiować plików.
 
-**HACS:** HACS nie instaluje aplikacji Home Assistant (dawniej dodatków). To repozytorium zawiera aplikację, a nie integrację HACS. Użyj jednej z metod instalacji przez sklep opisanych powyżej. Zobacz [wyjaśnienie HACS](https://www.hacs.xyz/docs/faq/addons/) oraz [pełną instrukcję instalacji](https://remote-ha.com/docs).
+**HACS:** HACS nie instaluje aplikacji Home Assistant (dawniej dodatków). To repozytorium zawiera aplikację, a nie integrację HACS. Użyj jednej z metod instalacji przez sklep opisanych powyżej. Zobacz [wyjaśnienie HACS](https://www.hacs.xyz/docs/faq/addons/) oraz [pełną instrukcję instalacji](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
 
 ### Parowanie z kontem
 
@@ -97,7 +97,7 @@ Du benötigst **Home Assistant OS**, ein Administratorkonto und ein Gerät mit *
 
 Der App-Store lädt die App aus dem [öffentlichen GitHub-Repository](https://github.com/remote-ha/remote-ha-addon) herunter. Du musst keine ZIP-Datei herunterladen oder Dateien manuell kopieren.
 
-**HACS:** HACS installiert keine Home-Assistant-Apps (früher Add-ons). Dieses Repository enthält eine App und keine HACS-Integration. Verwende die oben beschriebenen Methoden im App-Store. Siehe die [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) und die [vollständige Installationsanleitung](https://remote-ha.com/docs).
+**HACS:** HACS installiert keine Home-Assistant-Apps (früher Add-ons). Dieses Repository enthält eine App und keine HACS-Integration. Verwende die oben beschriebenen Methoden im App-Store. Siehe die [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) und die [vollständige Installationsanleitung](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
 
 ### Dein Zuhause koppeln
 
@@ -134,7 +134,7 @@ Je hebt **Home Assistant OS**, een beheerdersaccount en een apparaat met **aarch
 
 De appwinkel downloadt de app uit de [openbare GitHub-repository](https://github.com/remote-ha/remote-ha-addon). Je hoeft geen ZIP-bestand te downloaden of bestanden handmatig te kopiëren.
 
-**HACS:** HACS installeert geen Home Assistant-apps (voorheen add-ons). Deze repository bevat een app, geen HACS-integratie. Gebruik de bovenstaande methoden via de appwinkel. Zie de [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) en de [volledige installatiehandleiding](https://remote-ha.com/docs).
+**HACS:** HACS installeert geen Home Assistant-apps (voorheen add-ons). Deze repository bevat een app, geen HACS-integratie. Gebruik de bovenstaande methoden via de appwinkel. Zie de [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) en de [volledige installatiehandleiding](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
 
 ### Je huis koppelen
 
@@ -171,7 +171,7 @@ Vous devez disposer de **Home Assistant OS**, d’un compte administrateur et d�
 
 La boutique télécharge l’application depuis le [dépôt GitHub public](https://github.com/remote-ha/remote-ha-addon). Aucun téléchargement ZIP ni copie manuelle de fichiers n’est nécessaire.
 
-**HACS :** HACS n’installe pas les applications Home Assistant (anciennement add-ons). Ce dépôt contient une application et non une intégration HACS. Utilisez les méthodes décrites ci-dessus dans la boutique. Consultez la [FAQ HACS](https://www.hacs.xyz/docs/faq/addons/) et le [guide d’installation complet](https://remote-ha.com/docs).
+**HACS :** HACS n’installe pas les applications Home Assistant (anciennement add-ons). Ce dépôt contient une application et non une intégration HACS. Utilisez les méthodes décrites ci-dessus dans la boutique. Consultez la [FAQ HACS](https://www.hacs.xyz/docs/faq/addons/) et le [guide d’installation complet](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
 
 ### Appairer votre maison
 
