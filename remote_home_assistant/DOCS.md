@@ -8,7 +8,7 @@ A secure way back to your Home Assistant. Connect through an encrypted tunnel, c
 
 ### Register and install
 
-Create your account at [remote-ha.com/register](https://remote-ha.com/register), verify your email, and open the [dashboard](https://remote-ha.com/dashboard). Under **Add a home**, choose a name and an available address, then select **Add installation**.
+Create your account at [remote-ha.com/register](https://remote-ha.com/en/register), verify your email, and open the [dashboard](https://remote-ha.com/en/dashboard). Under **Add a home**, choose a name and an available address, then select **Add installation**.
 
 Requires **Home Assistant OS**, an administrator account and an **aarch64 (ARM64)** or **amd64 (x86-64)** device. Home Assistant Container does not include the app store. Before Home Assistant 2026.2, **Apps** was called **Add-ons**.
 
@@ -23,7 +23,7 @@ Requires **Home Assistant OS**, an administrator account and an **aarch64 (ARM64
 
 The app store downloads the app from the [public GitHub repository](https://github.com/remote-ha/remote-ha-addon); no ZIP download or manual file copying is needed.
 
-**HACS:** HACS does not install Home Assistant apps (formerly add-ons). This repository is an app, not a HACS integration. Use the app-store methods above. See the [HACS FAQ](https://www.hacs.xyz/docs/faq/addons/) and the [full installation guide](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
+**HACS:** HACS does not install Home Assistant apps (formerly add-ons). This repository is an app, not a HACS integration. Use the app-store methods above. See the [HACS FAQ](https://www.hacs.xyz/docs/faq/addons/) and the [full installation guide](https://remote-ha.com/en/docs).
 
 ### Pair your home
 
@@ -35,7 +35,7 @@ Your connection is remembered after a restart or update. To pair again, generate
 
 If the connection is unavailable, check your internet connection and the installation’s status in the dashboard. Before updating, back up the app and keep its data. Your Home Assistant login remains separate from your Remote HA account.
 
-Configuration labels follow your Home Assistant language. This documentation is available below in all five languages. Remote HA and its connection provider process traffic to deliver the service; see [Security](https://remote-ha.com/security) and [Privacy](https://remote-ha.com/privacy).
+Configuration labels follow your Home Assistant language. This documentation is available below in all five languages. Remote HA and its connection provider process traffic to deliver the service; see [Security](https://remote-ha.com/en/security) and [Privacy](https://remote-ha.com/en/privacy).
 
 Need help? [contact@remote-ha.com](mailto:contact@remote-ha.com). Never include your token in a support request.
 
@@ -45,7 +45,7 @@ Bezpieczny dostęp do Twojego Home Assistanta z dowolnego miejsca. Łącz się p
 
 ### Rejestracja i instalacja
 
-Utwórz konto na [remote-ha.com/register](https://remote-ha.com/register), potwierdź adres e-mail i otwórz [panel](https://remote-ha.com/dashboard). W sekcji **Add a home** wpisz nazwę, wybierz dostępny adres i kliknij **Add installation**.
+Utwórz konto na [remote-ha.com/register](https://remote-ha.com/pl/register), potwierdź adres e-mail i otwórz [panel](https://remote-ha.com/pl/dashboard). W sekcji **Dodaj dom** wpisz nazwę, wybierz dostępny adres i kliknij **Dodaj instalację**.
 
 Wymagane są **Home Assistant OS**, konto administratora i urządzenie **aarch64 (ARM64)** lub **amd64 (x86-64)**. Home Assistant Container nie zawiera sklepu aplikacji. Przed wersją Home Assistant 2026.2 menu **Aplikacje** nosiło nazwę **Dodatki**.
 
@@ -60,11 +60,11 @@ Wymagane są **Home Assistant OS**, konto administratora i urządzenie **aarch64
 
 Sklep pobiera aplikację z [publicznego repozytorium GitHub](https://github.com/remote-ha/remote-ha-addon). Nie trzeba pobierać pliku ZIP ani ręcznie kopiować plików.
 
-**HACS:** HACS nie instaluje aplikacji Home Assistant (dawniej dodatków). To repozytorium zawiera aplikację, a nie integrację HACS. Użyj jednej z metod instalacji przez sklep opisanych powyżej. Zobacz [wyjaśnienie HACS](https://www.hacs.xyz/docs/faq/addons/) oraz [pełną instrukcję instalacji](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
+**HACS:** HACS nie instaluje aplikacji Home Assistant (dawniej dodatków). To repozytorium zawiera aplikację, a nie integrację HACS. Użyj jednej z metod instalacji przez sklep opisanych powyżej. Zobacz [wyjaśnienie HACS](https://www.hacs.xyz/docs/faq/addons/) oraz [pełną instrukcję instalacji](https://remote-ha.com/pl/docs).
 
 ### Parowanie z kontem
 
-Najpierw zainstaluj aplikację, a następnie w panelu przy swojej instalacji kliknij **Pairing token**. W Home Assistant otwórz **Ustawienia → Aplikacje → Remote Home Assistant → Konfiguracja**, wklej token w pole **Token** (`pairing_token` w edytorze YAML) i zapisz. Na karcie informacji wybierz **Uruchom** lub **Uruchom ponownie**, jeśli aplikacja już działa. Włącz uruchamianie przy starcie systemu. Poczekaj na status **Connected** w panelu, otwórz adres instalacji i zaloguj się swoim kontem Home Assistant.
+Najpierw zainstaluj aplikację, a następnie w panelu przy swojej instalacji kliknij **Token parowania**. W Home Assistant otwórz **Ustawienia → Aplikacje → Remote Home Assistant → Konfiguracja**, wklej token w pole **Token** (`pairing_token` w edytorze YAML) i zapisz. Na karcie informacji wybierz **Uruchom** lub **Uruchom ponownie**, jeśli aplikacja już działa. Włącz uruchamianie przy starcie systemu. Poczekaj na status **Połączono** w panelu, otwórz adres instalacji i zaloguj się swoim kontem Home Assistant.
 
 W panelu Remote HA określisz, kto może się łączyć i które ścieżki są dozwolone. Nie musisz konfigurować routera ani certyfikatów.
 
@@ -72,7 +72,7 @@ Połączenie jest zapamiętywane po restarcie i aktualizacji. Aby sparować pono
 
 Jeśli połączenie jest niedostępne, sprawdź dostęp do internetu oraz stan instalacji w panelu. Przed aktualizacją wykonaj kopię zapasową aplikacji i zachowaj jej dane. Konto Home Assistant pozostaje niezależne od konta Remote HA.
 
-Język etykiet konfiguracji odpowiada językowi Home Assistant. Dokumentacja zawiera wszystkie pięć wersji językowych. Remote HA i dostawca połączenia przetwarzają ruch w celu świadczenia usługi; zobacz [bezpieczeństwo](https://remote-ha.com/security) i [prywatność](https://remote-ha.com/privacy).
+Język etykiet konfiguracji odpowiada językowi Home Assistant. Dokumentacja zawiera wszystkie pięć wersji językowych. Remote HA i dostawca połączenia przetwarzają ruch w celu świadczenia usługi; zobacz [bezpieczeństwo](https://remote-ha.com/pl/security) i [prywatność](https://remote-ha.com/pl/privacy).
 
 Potrzebujesz pomocy? [contact@remote-ha.com](mailto:contact@remote-ha.com). Nie dołączaj tokenu do zgłoszenia.
 
@@ -82,7 +82,7 @@ Ein sicherer Weg zurück zu deinem Home Assistant. Verbinde dich über einen ver
 
 ### Konto erstellen und installieren
 
-Erstelle dein Konto auf [remote-ha.com/register](https://remote-ha.com/register), bestätige deine E-Mail-Adresse und öffne das [Dashboard](https://remote-ha.com/dashboard). Gib unter **Add a home** einen Namen ein, wähle eine verfügbare Adresse und klicke auf **Add installation**.
+Erstelle dein Konto auf [remote-ha.com/register](https://remote-ha.com/de/register), bestätige deine E-Mail-Adresse und öffne das [Dashboard](https://remote-ha.com/de/dashboard). Gib unter **Zuhause hinzufügen** einen Namen ein, wähle eine verfügbare Adresse und klicke auf **Installation hinzufügen**.
 
 Du benötigst **Home Assistant OS**, ein Administratorkonto und ein Gerät mit **aarch64 (ARM64)** oder **amd64 (x86-64)**. Home Assistant Container enthält keinen App-Store. Vor Home Assistant 2026.2 hieß **Apps** noch **Add-ons**.
 
@@ -97,11 +97,11 @@ Du benötigst **Home Assistant OS**, ein Administratorkonto und ein Gerät mit *
 
 Der App-Store lädt die App aus dem [öffentlichen GitHub-Repository](https://github.com/remote-ha/remote-ha-addon) herunter. Du musst keine ZIP-Datei herunterladen oder Dateien manuell kopieren.
 
-**HACS:** HACS installiert keine Home-Assistant-Apps (früher Add-ons). Dieses Repository enthält eine App und keine HACS-Integration. Verwende die oben beschriebenen Methoden im App-Store. Siehe die [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) und die [vollständige Installationsanleitung](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
+**HACS:** HACS installiert keine Home-Assistant-Apps (früher Add-ons). Dieses Repository enthält eine App und keine HACS-Integration. Verwende die oben beschriebenen Methoden im App-Store. Siehe die [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) und die [vollständige Installationsanleitung](https://remote-ha.com/de/docs).
 
 ### Dein Zuhause koppeln
 
-Installiere die App, bevor du einen Token erzeugst. Wähle im Dashboard bei deiner Installation **Pairing token**. Öffne in Home Assistant **Einstellungen → Apps → Remote Home Assistant → Konfiguration**, füge den Token unter **Token** ein (`pairing_token` im YAML-Editor) und speichere. Wähle auf der Infoseite **Starten** oder **Neu starten**, falls die App bereits läuft. Aktiviere den Start beim Systemstart. Warte im Dashboard auf **Connected**, öffne die Adresse deiner Installation und melde dich mit deinem Home-Assistant-Konto an.
+Installiere die App, bevor du einen Token erzeugst. Wähle im Dashboard bei deiner Installation **Kopplungstoken**. Öffne in Home Assistant **Einstellungen → Apps → Remote Home Assistant → Konfiguration**, füge den Token unter **Token** ein (`pairing_token` im YAML-Editor) und speichere. Wähle auf der Infoseite **Starten** oder **Neu starten**, falls die App bereits läuft. Aktiviere den Start beim Systemstart. Warte im Dashboard auf **Verbunden**, öffne die Adresse deiner Installation und melde dich mit deinem Home-Assistant-Konto an.
 
 Im Remote-HA-Dashboard legst du fest, wer sich verbinden darf und welche Pfade erlaubt sind. Du musst weder deinen Router konfigurieren noch Zertifikate einrichten.
 
@@ -109,7 +109,7 @@ Die Verbindung bleibt nach einem Neustart oder Update gespeichert. Für eine ern
 
 Falls die Verbindung nicht verfügbar ist, prüfe deine Internetverbindung und den Status der Installation im Dashboard. Sichere die App vor einem Update und behalte ihre Daten. Dein Home-Assistant-Konto bleibt von deinem Remote-HA-Konto getrennt.
 
-Die Sprache der Konfigurationsfelder richtet sich nach Home Assistant. Diese Dokumentation enthält alle fünf Sprachversionen. Remote HA und sein Verbindungsanbieter verarbeiten den Datenverkehr, um den Dienst bereitzustellen; siehe [Sicherheit](https://remote-ha.com/security) und [Datenschutz](https://remote-ha.com/privacy).
+Die Sprache der Konfigurationsfelder richtet sich nach Home Assistant. Diese Dokumentation enthält alle fünf Sprachversionen. Remote HA und sein Verbindungsanbieter verarbeiten den Datenverkehr, um den Dienst bereitzustellen; siehe [Sicherheit](https://remote-ha.com/de/security) und [Datenschutz](https://remote-ha.com/de/privacy).
 
 Brauchst du Hilfe? [contact@remote-ha.com](mailto:contact@remote-ha.com). Gib deinen Token niemals in einer Supportanfrage an.
 
@@ -119,7 +119,7 @@ Een veilige weg terug naar je Home Assistant. Maak verbinding via een versleutel
 
 ### Registreren en installeren
 
-Maak je account aan op [remote-ha.com/register](https://remote-ha.com/register), bevestig je e-mailadres en open het [dashboard](https://remote-ha.com/dashboard). Vul bij **Add a home** een naam in, kies een beschikbaar adres en klik op **Add installation**.
+Maak je account aan op [remote-ha.com/register](https://remote-ha.com/nl/register), bevestig je e-mailadres en open het [dashboard](https://remote-ha.com/nl/dashboard). Vul bij **Huis toevoegen** een naam in, kies een beschikbaar adres en klik op **Installatie toevoegen**.
 
 Je hebt **Home Assistant OS**, een beheerdersaccount en een apparaat met **aarch64 (ARM64)** of **amd64 (x86-64)** nodig. Home Assistant Container bevat geen appwinkel. Vóór Home Assistant 2026.2 heette **Apps** nog **Add-ons**.
 
@@ -134,11 +134,11 @@ Je hebt **Home Assistant OS**, een beheerdersaccount en een apparaat met **aarch
 
 De appwinkel downloadt de app uit de [openbare GitHub-repository](https://github.com/remote-ha/remote-ha-addon). Je hoeft geen ZIP-bestand te downloaden of bestanden handmatig te kopiëren.
 
-**HACS:** HACS installeert geen Home Assistant-apps (voorheen add-ons). Deze repository bevat een app, geen HACS-integratie. Gebruik de bovenstaande methoden via de appwinkel. Zie de [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) en de [volledige installatiehandleiding](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
+**HACS:** HACS installeert geen Home Assistant-apps (voorheen add-ons). Deze repository bevat een app, geen HACS-integratie. Gebruik de bovenstaande methoden via de appwinkel. Zie de [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) en de [volledige installatiehandleiding](https://remote-ha.com/nl/docs).
 
 ### Je huis koppelen
 
-Installeer de app voordat je een token aanmaakt. Kies in het dashboard **Pairing token** bij je installatie. Open in Home Assistant **Instellingen → Apps → Remote Home Assistant → Configuratie**, plak het token in **Token** (`pairing_token` in de YAML-editor) en sla op. Kies op de informatiepagina **Starten** of **Herstarten** als de app al actief is. Schakel starten bij het opstarten in. Wacht op **Connected** in het dashboard, open het installatieadres en meld je aan met je Home Assistant-account.
+Installeer de app voordat je een token aanmaakt. Kies in het dashboard **Koppeltoken** bij je installatie. Open in Home Assistant **Instellingen → Apps → Remote Home Assistant → Configuratie**, plak het token in **Token** (`pairing_token` in de YAML-editor) en sla op. Kies op de informatiepagina **Starten** of **Herstarten** als de app al actief is. Schakel starten bij het opstarten in. Wacht op **Verbonden** in het dashboard, open het installatieadres en meld je aan met je Home Assistant-account.
 
 In het Remote HA-dashboard bepaal je wie verbinding mag maken en welke paden zijn toegestaan. Je hoeft geen routerinstellingen te wijzigen of certificaten in te stellen.
 
@@ -146,7 +146,7 @@ Je verbinding blijft bewaard na een herstart of update. Wil je opnieuw koppelen,
 
 Als de verbinding niet beschikbaar is, controleer dan je internetverbinding en de status van de installatie in het dashboard. Maak vóór een update een back-up van de app en bewaar de gegevens. Je Home Assistant-account blijft gescheiden van je Remote HA-account.
 
-De taal van de configuratievelden volgt de taal van Home Assistant. Deze documentatie bevat alle vijf taalversies. Remote HA en zijn verbindingsprovider verwerken verkeer om de dienst te leveren; zie [Beveiliging](https://remote-ha.com/security) en [Privacy](https://remote-ha.com/privacy).
+De taal van de configuratievelden volgt de taal van Home Assistant. Deze documentatie bevat alle vijf taalversies. Remote HA en zijn verbindingsprovider verwerken verkeer om de dienst te leveren; zie [Beveiliging](https://remote-ha.com/nl/security) en [Privacy](https://remote-ha.com/nl/privacy).
 
 Hulp nodig? [contact@remote-ha.com](mailto:contact@remote-ha.com). Vermeld je token nooit in een supportverzoek.
 
@@ -156,7 +156,7 @@ Retrouvez votre Home Assistant en toute sécurité. Connectez-vous via un tunnel
 
 ### Créer un compte et installer
 
-Créez votre compte sur [remote-ha.com/register](https://remote-ha.com/register), confirmez votre adresse e-mail et ouvrez le [tableau de bord](https://remote-ha.com/dashboard). Dans **Add a home**, saisissez un nom, choisissez une adresse disponible et cliquez sur **Add installation**.
+Créez votre compte sur [remote-ha.com/register](https://remote-ha.com/fr/register), confirmez votre adresse e-mail et ouvrez le [tableau de bord](https://remote-ha.com/fr/dashboard). Dans **Ajouter une maison**, saisissez un nom, choisissez une adresse disponible et cliquez sur **Ajouter une installation**.
 
 Vous devez disposer de **Home Assistant OS**, d’un compte administrateur et d’un appareil **aarch64 (ARM64)** ou **amd64 (x86-64)**. Home Assistant Container ne comprend pas de boutique d’applications. Avant Home Assistant 2026.2, les **Apps** s’appelaient **Add-ons**.
 
@@ -171,11 +171,11 @@ Vous devez disposer de **Home Assistant OS**, d’un compte administrateur et d�
 
 La boutique télécharge l’application depuis le [dépôt GitHub public](https://github.com/remote-ha/remote-ha-addon). Aucun téléchargement ZIP ni copie manuelle de fichiers n’est nécessaire.
 
-**HACS :** HACS n’installe pas les applications Home Assistant (anciennement add-ons). Ce dépôt contient une application et non une intégration HACS. Utilisez les méthodes décrites ci-dessus dans la boutique. Consultez la [FAQ HACS](https://www.hacs.xyz/docs/faq/addons/) et le [guide d’installation complet](https://github.com/remote-ha/remote-ha-addon/blob/main/remote_home_assistant/DOCS.md).
+**HACS :** HACS n’installe pas les applications Home Assistant (anciennement add-ons). Ce dépôt contient une application et non une intégration HACS. Utilisez les méthodes décrites ci-dessus dans la boutique. Consultez la [FAQ HACS](https://www.hacs.xyz/docs/faq/addons/) et le [guide d’installation complet](https://remote-ha.com/fr/docs).
 
 ### Appairer votre maison
 
-Installez l’application avant de générer un jeton. Dans le tableau de bord, sélectionnez **Pairing token** pour votre installation. Dans Home Assistant, ouvrez **Paramètres → Applications → Remote Home Assistant → Configuration**, collez le jeton dans **Jeton** (`pairing_token` dans l’éditeur YAML) et enregistrez. Sur la page d’informations, sélectionnez **Démarrer**, ou **Redémarrer** si l’application fonctionne déjà. Activez le démarrage automatique. Attendez le statut **Connected** dans le tableau de bord, ouvrez l’adresse de l’installation et connectez-vous avec votre compte Home Assistant.
+Installez l’application avant de générer un jeton. Dans le tableau de bord, sélectionnez **Jeton d’appairage** pour votre installation. Dans Home Assistant, ouvrez **Paramètres → Applications → Remote Home Assistant → Configuration**, collez le jeton dans **Jeton** (`pairing_token` dans l’éditeur YAML) et enregistrez. Sur la page d’informations, sélectionnez **Démarrer**, ou **Redémarrer** si l’application fonctionne déjà. Activez le démarrage automatique. Attendez le statut **Connecté** dans le tableau de bord, ouvrez l’adresse de l’installation et connectez-vous avec votre compte Home Assistant.
 
 Dans le tableau de bord Remote HA, choisissez qui peut se connecter et quels chemins sont autorisés. Vous n’avez pas besoin de configurer votre routeur ni de créer des certificats.
 
@@ -183,7 +183,7 @@ Votre connexion est conservée après un redémarrage ou une mise à jour. Pour 
 
 Si la connexion est indisponible, vérifiez votre connexion Internet et l’état de l’installation dans le tableau de bord. Avant une mise à jour, sauvegardez l’application et conservez ses données. Votre compte Home Assistant reste distinct de votre compte Remote HA.
 
-La langue des champs de configuration suit celle de Home Assistant. Cette documentation contient les cinq versions linguistiques. Remote HA et son fournisseur de connexion traitent le trafic pour fournir le service ; consultez les pages [Sécurité](https://remote-ha.com/security) et [Confidentialité](https://remote-ha.com/privacy).
+La langue des champs de configuration suit celle de Home Assistant. Cette documentation contient les cinq versions linguistiques. Remote HA et son fournisseur de connexion traitent le trafic pour fournir le service ; consultez les pages [Sécurité](https://remote-ha.com/fr/security) et [Confidentialité](https://remote-ha.com/fr/privacy).
 
 Besoin d’aide ? [contact@remote-ha.com](mailto:contact@remote-ha.com). Ne communiquez jamais votre jeton dans une demande d’assistance.
 
