@@ -1,6 +1,6 @@
 # Remote Home Assistant
 
-[English](#english) · [Polski](#polski) · [Deutsch](#deutsch) · [Nederlands](#nederlands) · [Français](#français)
+[English](#english) · [Polski](#polski) · [Deutsch](#deutsch) · [Nederlands](#nederlands) · [Français](#français) · [Svenska](#svenska)
 
 ## English
 
@@ -147,6 +147,35 @@ Installez l’application avant de générer un jeton. Dans le tableau de bord, 
 
 [remote-ha.com](https://remote-ha.com)
 
+## Svenska
+
+Säker åtkomst till din Home Assistant, var du än är. Anslut via en krypterad tunnel, välj vem som får åtkomst och behåll kontrollen över ditt hem.
+
+### Skapa ett konto och installera
+
+Skapa ditt konto på [remote-ha.com/register](https://remote-ha.com/sv/register), verifiera din e-postadress och öppna [kontrollpanelen](https://remote-ha.com/sv/dashboard). Under **Lägg till ett hem** anger du ett namn, väljer en ledig adress och klickar på **Lägg till installation**.
+
+Du behöver **Home Assistant OS**, ett administratörskonto och en enhet med **aarch64 (ARM64)** eller **amd64 (x86-64)**. Home Assistant Container innehåller ingen appbutik. Före Home Assistant 2026.2 hette **Appar** i stället **Tillägg**.
+
+**Installera med en knapp:** [Lägg till Remote HA:s arkiv i Home Assistant](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository=https%3A%2F%2Fgithub.com%2Fremote-ha%2Fremote-ha-addon). Välj din Home Assistant-instans, bekräfta att arkivet ska läggas till och leta sedan upp **Remote Home Assistant** under **Inställningar → Appar → Installera app**. Välj **Installera**.
+
+**Lägg till arkivet manuellt:**
+
+1. Öppna **Inställningar → Appar → Installera app**.
+2. Öppna menyn **⋮** uppe till höger och välj **Arkiv**.
+3. Klistra in `https://github.com/remote-ha/remote-ha-addon` och välj **Lägg till**.
+4. Stäng dialogrutan, leta upp **Remote Home Assistant** under **Remote Home Assistant Apps** och välj **Installera**. Uppdatera butiken eller välj **Sök efter uppdateringar** om appen inte visas.
+
+Appbutiken hämtar appen från det [offentliga GitHub-arkivet](https://github.com/remote-ha/remote-ha-addon). Du behöver inte hämta någon ZIP-fil eller kopiera filer manuellt.
+
+**HACS:** HACS installerar inte Home Assistant-appar (tidigare tillägg). Det här arkivet innehåller en app, inte en HACS-integration. Använd någon av metoderna för appbutiken ovan. Läs [HACS vanliga frågor](https://www.hacs.xyz/docs/faq/addons/) och den [fullständiga installationsguiden](https://remote-ha.com/sv/docs).
+
+### Parkoppla ditt hem
+
+Installera appen innan du skapar en parkopplingstoken. Välj **Parkopplingstoken** vid din installation i kontrollpanelen. I Home Assistant öppnar du **Inställningar → Appar → Remote Home Assistant → Konfiguration**, klistrar in token i **Token** (`pairing_token` i YAML-redigeraren) och väljer **Spara**. På informationssidan väljer du **Starta**, eller **Starta om** om appen redan körs. Aktivera **Starta vid uppstart**. Vänta tills **Ansluten** visas i kontrollpanelen, öppna installationens adress och logga in med ditt vanliga Home Assistant-konto.
+
+[remote-ha.com](https://remote-ha.com)
+
 ## Setup
 
-See [the setup guide](remote_home_assistant/DOCS.md) in English, Polish, German, Dutch and French.
+See [the setup guide](remote_home_assistant/DOCS.md) in English, Polish, German, Dutch, French and Swedish.

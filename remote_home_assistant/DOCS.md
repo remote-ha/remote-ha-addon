@@ -1,6 +1,6 @@
-# Remote Home Assistant 1.0.1
+# Remote Home Assistant 1.0.2
 
-[English](#english) · [Polski](#polski) · [Deutsch](#deutsch) · [Nederlands](#nederlands) · [Français](#français)
+[English](#english) · [Polski](#polski) · [Deutsch](#deutsch) · [Nederlands](#nederlands) · [Français](#français) · [Svenska](#svenska)
 
 ## English
 
@@ -35,7 +35,7 @@ Your connection is remembered after a restart or update. To pair again, generate
 
 If the connection is unavailable, check your internet connection and the installation’s status in the dashboard. Before updating, back up the app and keep its data. Your Home Assistant login remains separate from your Remote HA account.
 
-Configuration labels follow your Home Assistant language. This documentation is available below in all five languages. Remote HA and its connection provider process traffic to deliver the service; see [Security](https://remote-ha.com/en/security) and [Privacy](https://remote-ha.com/en/privacy).
+Configuration labels follow your Home Assistant language. This documentation is available below in all six languages. Remote HA and its connection provider process traffic to deliver the service; see [Security](https://remote-ha.com/en/security) and [Privacy](https://remote-ha.com/en/privacy).
 
 Need help? [contact@remote-ha.com](mailto:contact@remote-ha.com). Never include your token in a support request.
 
@@ -72,7 +72,7 @@ Połączenie jest zapamiętywane po restarcie i aktualizacji. Aby sparować pono
 
 Jeśli połączenie jest niedostępne, sprawdź dostęp do internetu oraz stan instalacji w panelu. Przed aktualizacją wykonaj kopię zapasową aplikacji i zachowaj jej dane. Konto Home Assistant pozostaje niezależne od konta Remote HA.
 
-Język etykiet konfiguracji odpowiada językowi Home Assistant. Dokumentacja zawiera wszystkie pięć wersji językowych. Remote HA i dostawca połączenia przetwarzają ruch w celu świadczenia usługi; zobacz [bezpieczeństwo](https://remote-ha.com/pl/security) i [prywatność](https://remote-ha.com/pl/privacy).
+Język etykiet konfiguracji odpowiada językowi Home Assistant. Dokumentacja zawiera wszystkie sześć wersji językowych. Remote HA i dostawca połączenia przetwarzają ruch w celu świadczenia usługi; zobacz [bezpieczeństwo](https://remote-ha.com/pl/security) i [prywatność](https://remote-ha.com/pl/privacy).
 
 Potrzebujesz pomocy? [contact@remote-ha.com](mailto:contact@remote-ha.com). Nie dołączaj tokenu do zgłoszenia.
 
@@ -109,7 +109,7 @@ Die Verbindung bleibt nach einem Neustart oder Update gespeichert. Für eine ern
 
 Falls die Verbindung nicht verfügbar ist, prüfe deine Internetverbindung und den Status der Installation im Dashboard. Sichere die App vor einem Update und behalte ihre Daten. Dein Home-Assistant-Konto bleibt von deinem Remote-HA-Konto getrennt.
 
-Die Sprache der Konfigurationsfelder richtet sich nach Home Assistant. Diese Dokumentation enthält alle fünf Sprachversionen. Remote HA und sein Verbindungsanbieter verarbeiten den Datenverkehr, um den Dienst bereitzustellen; siehe [Sicherheit](https://remote-ha.com/de/security) und [Datenschutz](https://remote-ha.com/de/privacy).
+Die Sprache der Konfigurationsfelder richtet sich nach Home Assistant. Diese Dokumentation enthält alle sechs Sprachversionen. Remote HA und sein Verbindungsanbieter verarbeiten den Datenverkehr, um den Dienst bereitzustellen; siehe [Sicherheit](https://remote-ha.com/de/security) und [Datenschutz](https://remote-ha.com/de/privacy).
 
 Brauchst du Hilfe? [contact@remote-ha.com](mailto:contact@remote-ha.com). Gib deinen Token niemals in einer Supportanfrage an.
 
@@ -146,7 +146,7 @@ Je verbinding blijft bewaard na een herstart of update. Wil je opnieuw koppelen,
 
 Als de verbinding niet beschikbaar is, controleer dan je internetverbinding en de status van de installatie in het dashboard. Maak vóór een update een back-up van de app en bewaar de gegevens. Je Home Assistant-account blijft gescheiden van je Remote HA-account.
 
-De taal van de configuratievelden volgt de taal van Home Assistant. Deze documentatie bevat alle vijf taalversies. Remote HA en zijn verbindingsprovider verwerken verkeer om de dienst te leveren; zie [Beveiliging](https://remote-ha.com/nl/security) en [Privacy](https://remote-ha.com/nl/privacy).
+De taal van de configuratievelden volgt de taal van Home Assistant. Deze documentatie bevat alle zes taalversies. Remote HA en zijn verbindingsprovider verwerken verkeer om de dienst te leveren; zie [Beveiliging](https://remote-ha.com/nl/security) en [Privacy](https://remote-ha.com/nl/privacy).
 
 Hulp nodig? [contact@remote-ha.com](mailto:contact@remote-ha.com). Vermeld je token nooit in een supportverzoek.
 
@@ -183,7 +183,44 @@ Votre connexion est conservée après un redémarrage ou une mise à jour. Pour 
 
 Si la connexion est indisponible, vérifiez votre connexion Internet et l’état de l’installation dans le tableau de bord. Avant une mise à jour, sauvegardez l’application et conservez ses données. Votre compte Home Assistant reste distinct de votre compte Remote HA.
 
-La langue des champs de configuration suit celle de Home Assistant. Cette documentation contient les cinq versions linguistiques. Remote HA et son fournisseur de connexion traitent le trafic pour fournir le service ; consultez les pages [Sécurité](https://remote-ha.com/fr/security) et [Confidentialité](https://remote-ha.com/fr/privacy).
+La langue des champs de configuration suit celle de Home Assistant. Cette documentation contient les six versions linguistiques. Remote HA et son fournisseur de connexion traitent le trafic pour fournir le service ; consultez les pages [Sécurité](https://remote-ha.com/fr/security) et [Confidentialité](https://remote-ha.com/fr/privacy).
 
 Besoin d’aide ? [contact@remote-ha.com](mailto:contact@remote-ha.com). Ne communiquez jamais votre jeton dans une demande d’assistance.
 
+
+## Svenska
+
+Säker åtkomst till din Home Assistant, var du än är. Anslut via en krypterad tunnel, välj vem som får åtkomst och behåll kontrollen över ditt hem.
+
+### Skapa ett konto och installera
+
+Skapa ditt konto på [remote-ha.com/register](https://remote-ha.com/sv/register), verifiera din e-postadress och öppna [kontrollpanelen](https://remote-ha.com/sv/dashboard). Under **Lägg till ett hem** anger du ett namn, väljer en ledig adress och klickar på **Lägg till installation**.
+
+Du behöver **Home Assistant OS**, ett administratörskonto och en enhet med **aarch64 (ARM64)** eller **amd64 (x86-64)**. Home Assistant Container innehåller ingen appbutik. Före Home Assistant 2026.2 hette **Appar** i stället **Tillägg**.
+
+**Installera med en knapp:** [Lägg till Remote HA:s arkiv i Home Assistant](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository=https%3A%2F%2Fgithub.com%2Fremote-ha%2Fremote-ha-addon). Välj din Home Assistant-instans, bekräfta att arkivet ska läggas till och leta sedan upp **Remote Home Assistant** under **Inställningar → Appar → Installera app**. Välj **Installera**.
+
+**Lägg till arkivet manuellt:**
+
+1. Öppna **Inställningar → Appar → Installera app**.
+2. Öppna menyn **⋮** uppe till höger och välj **Arkiv**.
+3. Klistra in `https://github.com/remote-ha/remote-ha-addon` och välj **Lägg till**.
+4. Stäng dialogrutan, leta upp **Remote Home Assistant** under **Remote Home Assistant Apps** och välj **Installera**. Uppdatera butiken eller välj **Sök efter uppdateringar** om appen inte visas.
+
+Appbutiken hämtar appen från det [offentliga GitHub-arkivet](https://github.com/remote-ha/remote-ha-addon). Du behöver inte hämta någon ZIP-fil eller kopiera filer manuellt.
+
+**HACS:** HACS installerar inte Home Assistant-appar (tidigare tillägg). Det här arkivet innehåller en app, inte en HACS-integration. Använd någon av metoderna för appbutiken ovan. Läs [HACS vanliga frågor](https://www.hacs.xyz/docs/faq/addons/) och den [fullständiga installationsguiden](https://remote-ha.com/sv/docs).
+
+### Parkoppla ditt hem
+
+Installera appen innan du skapar en parkopplingstoken. Välj **Parkopplingstoken** vid din installation i kontrollpanelen. I Home Assistant öppnar du **Inställningar → Appar → Remote Home Assistant → Konfiguration**, klistrar in token i **Token** (`pairing_token` i YAML-redigeraren) och väljer **Spara**. På informationssidan väljer du **Starta**, eller **Starta om** om appen redan körs. Aktivera **Starta vid uppstart**. Vänta tills **Ansluten** visas i kontrollpanelen, öppna installationens adress och logga in med ditt vanliga Home Assistant-konto.
+
+Du hanterar vem som får ansluta och vilka sökvägar som tillåts i Remote HA:s kontrollpanel. Du behöver inte konfigurera routern eller hantera certifikat.
+
+Din anslutning sparas efter en omstart eller uppdatering. Om du vill parkoppla på nytt skapar du en ny token, ersätter den sparade token och startar om appen. Skapa en ny token om den har gått ut eller redan har använts. Håll dina token hemliga.
+
+Om anslutningen inte fungerar kontrollerar du internetanslutningen och installationens status i kontrollpanelen. Säkerhetskopiera appen före en uppdatering och behåll dess data. Din inloggning till Home Assistant är separat från ditt Remote HA-konto.
+
+Konfigurationsfältens språk följer språket i Home Assistant. Den här dokumentationen finns på sex språk. Remote HA och dess anslutningsleverantör behandlar trafik för att tillhandahålla tjänsten. Läs mer om [säkerhet](https://remote-ha.com/sv/security) och [integritet](https://remote-ha.com/sv/privacy).
+
+Behöver du hjälp? [contact@remote-ha.com](mailto:contact@remote-ha.com). Skicka aldrig din token i en supportförfrågan.

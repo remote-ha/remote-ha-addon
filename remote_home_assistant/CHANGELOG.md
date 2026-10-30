@@ -1,3 +1,12 @@
+# 1.0.2
+
+- English: Added Swedish configuration labels and setup instructions, with links to the Swedish platform.
+- Polski: Dodano szwedzkie etykiety konfiguracji i instrukcję z odnośnikami do szwedzkiej wersji platformy.
+- Deutsch: Schwedische Konfigurationsfelder und Anleitung mit Links zur schwedischen Plattform hinzugefügt.
+- Nederlands: Zweedse configuratielabels en instructies toegevoegd, met links naar het Zweedse platform.
+- Français : Ajout des libellés et des instructions en suédois, avec des liens vers la plateforme suédoise.
+- Svenska: Svenska konfigurationsfält och installationsanvisningar med länkar till den svenska plattformen har lagts till.
+
 # 1.0.1
 
 - English: Fixed installation from the Home Assistant app store. The website link remains available in the app information and documentation.

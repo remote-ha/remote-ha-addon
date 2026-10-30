@@ -1,5 +1,5 @@
 name: Remote Home Assistant
-version: "1.0.1"
+version: "1.0.2"
 slug: remote_home_assistant
 description: >-
   A secure way back to your Home Assistant. Connect through an encrypted tunnel, choose who gets through, and keep control of your home.

@@ -1,0 +1,4 @@
+configuration:
+  pairing_token:
+    name: Token
+    description: Klistra in en ny token från https://remote-ha.com/sv, spara och starta eller starta om appen. Din anslutning sparas automatiskt.
