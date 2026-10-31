@@ -25,6 +25,8 @@ The app store downloads the app from the [public GitHub repository](https://gith
 
 **HACS:** HACS does not install Home Assistant apps (formerly add-ons). This repository is an app, not a HACS integration. Use the app-store methods above. See the [HACS FAQ](https://www.hacs.xyz/docs/faq/addons/) and the [full installation guide](https://remote-ha.com/en/docs).
 
+After signing in, follow the setup steps in the dashboard. Select a home to see its overview, access firewall, activity and connection settings. Your subscription is under **Account & billing**. The language and appearance controls are in the top bar; on small screens, appearance is also in the menu.
+
 ### Pair your home
 
 Install the app before generating a pairing token. In the dashboard, select **Pairing token** on your installation. In Home Assistant, open **Settings → Apps → Remote Home Assistant → Configuration**, paste the token into **Token** (`pairing_token` in the YAML editor) and **Save**. On **Info**, select **Start**, or **Restart** if already running. Enable **Start on boot**. Wait for **Connected** in the dashboard, open the installation address and use your usual Home Assistant login.
@@ -61,6 +63,8 @@ Wymagane są **Home Assistant OS**, konto administratora i urządzenie **aarch64
 Sklep pobiera aplikację z [publicznego repozytorium GitHub](https://github.com/remote-ha/remote-ha-addon). Nie trzeba pobierać pliku ZIP ani ręcznie kopiować plików.
 
 **HACS:** HACS nie instaluje aplikacji Home Assistant (dawniej dodatków). To repozytorium zawiera aplikację, a nie integrację HACS. Użyj jednej z metod instalacji przez sklep opisanych powyżej. Zobacz [wyjaśnienie HACS](https://www.hacs.xyz/docs/faq/addons/) oraz [pełną instrukcję instalacji](https://remote-ha.com/pl/docs).
+
+Po zalogowaniu przejdź przez kroki konfiguracji w panelu. Wybierz dom, aby zobaczyć przegląd, zaporę dostępu, aktywność i ustawienia połączenia. Abonament znajdziesz w sekcji **Konto i abonament**. Język i wygląd zmienisz w górnym pasku; na małych ekranach wygląd jest też w menu.
 
 ### Parowanie z kontem
 
@@ -99,6 +103,8 @@ Der App-Store lädt die App aus dem [öffentlichen GitHub-Repository](https://gi
 
 **HACS:** HACS installiert keine Home-Assistant-Apps (früher Add-ons). Dieses Repository enthält eine App und keine HACS-Integration. Verwende die oben beschriebenen Methoden im App-Store. Siehe die [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) und die [vollständige Installationsanleitung](https://remote-ha.com/de/docs).
 
+Folge nach dem Anmelden den Einrichtungsschritten im Dashboard. Wähle ein Zuhause aus, um Übersicht, Zugriffsfirewall, Aktivitäten und Verbindungseinstellungen zu öffnen. Dein Abonnement findest du unter **Konto & Abonnement**. Sprache und Darstellung lassen sich in der oberen Leiste ändern; auf kleinen Bildschirmen ist die Darstellung auch im Menü verfügbar.
+
 ### Dein Zuhause koppeln
 
 Installiere die App, bevor du einen Token erzeugst. Wähle im Dashboard bei deiner Installation **Kopplungstoken**. Öffne in Home Assistant **Einstellungen → Apps → Remote Home Assistant → Konfiguration**, füge den Token unter **Token** ein (`pairing_token` im YAML-Editor) und speichere. Wähle auf der Infoseite **Starten** oder **Neu starten**, falls die App bereits läuft. Aktiviere den Start beim Systemstart. Warte im Dashboard auf **Verbunden**, öffne die Adresse deiner Installation und melde dich mit deinem Home-Assistant-Konto an.
@@ -135,6 +141,8 @@ Je hebt **Home Assistant OS**, een beheerdersaccount en een apparaat met **aarch
 De appwinkel downloadt de app uit de [openbare GitHub-repository](https://github.com/remote-ha/remote-ha-addon). Je hoeft geen ZIP-bestand te downloaden of bestanden handmatig te kopiëren.
 
 **HACS:** HACS installeert geen Home Assistant-apps (voorheen add-ons). Deze repository bevat een app, geen HACS-integratie. Gebruik de bovenstaande methoden via de appwinkel. Zie de [HACS-FAQ](https://www.hacs.xyz/docs/faq/addons/) en de [volledige installatiehandleiding](https://remote-ha.com/nl/docs).
+
+Volg na het aanmelden de stappen in het dashboard. Selecteer een huis om het overzicht, de toegangsfirewall, activiteit en verbindingsinstellingen te bekijken. Je abonnement staat onder **Account en abonnement**. Taal en weergave wijzig je in de bovenste balk; op kleine schermen staat weergave ook in het menu.
 
 ### Je huis koppelen
 
@@ -173,6 +181,8 @@ La boutique télécharge l’application depuis le [dépôt GitHub public](https
 
 **HACS :** HACS n’installe pas les applications Home Assistant (anciennement add-ons). Ce dépôt contient une application et non une intégration HACS. Utilisez les méthodes décrites ci-dessus dans la boutique. Consultez la [FAQ HACS](https://www.hacs.xyz/docs/faq/addons/) et le [guide d’installation complet](https://remote-ha.com/fr/docs).
 
+Après la connexion, suivez les étapes de configuration dans le tableau de bord. Sélectionnez une maison pour consulter sa vue d’ensemble, son pare-feu d’accès, son activité et ses paramètres de connexion. Votre abonnement se trouve dans **Compte et abonnement**. La langue et l’apparence se changent dans la barre supérieure ; sur petit écran, l’apparence est aussi accessible dans le menu.
+
 ### Appairer votre maison
 
 Installez l’application avant de générer un jeton. Dans le tableau de bord, sélectionnez **Jeton d’appairage** pour votre installation. Dans Home Assistant, ouvrez **Paramètres → Applications → Remote Home Assistant → Configuration**, collez le jeton dans **Jeton** (`pairing_token` dans l’éditeur YAML) et enregistrez. Sur la page d’informations, sélectionnez **Démarrer**, ou **Redémarrer** si l’application fonctionne déjà. Activez le démarrage automatique. Attendez le statut **Connecté** dans le tableau de bord, ouvrez l’adresse de l’installation et connectez-vous avec votre compte Home Assistant.
@@ -210,6 +220,8 @@ Du behöver **Home Assistant OS**, ett administratörskonto och en enhet med **a
 Appbutiken hämtar appen från det [offentliga GitHub-arkivet](https://github.com/remote-ha/remote-ha-addon). Du behöver inte hämta någon ZIP-fil eller kopiera filer manuellt.
 
 **HACS:** HACS installerar inte Home Assistant-appar (tidigare tillägg). Det här arkivet innehåller en app, inte en HACS-integration. Använd någon av metoderna för appbutiken ovan. Läs [HACS vanliga frågor](https://www.hacs.xyz/docs/faq/addons/) och den [fullständiga installationsguiden](https://remote-ha.com/sv/docs).
+
+Följ installationsstegen i kontrollpanelen när du har loggat in. Välj ett hem för att se översikt, åtkomstbrandvägg, aktivitet och anslutningsinställningar. Din prenumeration finns under **Konto och prenumeration**. Språk och utseende ändras i det övre fältet; på små skärmar finns utseende även i menyn.
 
 ### Parkoppla ditt hem
 
